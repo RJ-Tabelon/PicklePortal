@@ -97,7 +97,6 @@ export default function HomePage() {
         <p className='hero-tagline'>
           Plan your next pickleball match effortlessly.
         </p>
-        <div className='divider'></div>
       </section>
       <div className='divider'></div>
       <OccupancyMonitor totalPlayers={totalPlayers} courts={courts} />
