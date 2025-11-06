@@ -6,7 +6,6 @@
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  border-radius: 12px 12px 0 0;
 }
 
 .nav-pill {
@@ -92,25 +91,24 @@ body {
 }
 
 .hero-logo {
-  width: 75px;
+  width: 200px;
   height: auto;
-  margin-bottom: 8px;
 }
 
 .site-title {
   font-family: "Chelsea Market", serif;
-  font-size: 64px;
+  font-size: 72px;
   color: #aec48c;
-  text-shadow: -4px 0 0 #2f5130;
+  text-shadow: -4px 4px 0 #2f5130;
   margin: 0;
 }
 
 .hero-tagline {
   font-family: "Bree Serif", serif;
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 300;
   color: #6f7f6b;
-  margin-top: 14px;
+  margin-top: -10px;
 }
 
 /* OCCUPANCY */
@@ -125,14 +123,16 @@ body {
 
 .occ-head {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: space-between;
-  margin: 10px 0 18px;
+  margin-bottom: 65px;
 }
 .occ-title {
   margin: 0;
-  font: 700 22px/1 "Bree Serif", serif;
-  color: #222;
+  font-family: "Bree Serif", serif;
+  font-weight: 700;
+  font-size: 26px;
+  color: #1f2e1e;
 }
 .occ-sub {
   margin: 6px 0 0;
@@ -281,15 +281,15 @@ body {
 
 .divider {
   width: 100vw;
-  height: 14px;
+  height: 23px;
   border: none;
-  border-top: 5px solid #a9b88e;
-  border-bottom: 5px solid #588157;
+  border-top: 8px solid #a9b88e;
+  border-bottom: 8px solid #588157;
   position: relative;
   left: 50%;
   transform: translateX(-50%);
-  margin: 24px 0;
-  margin-top: 50px;
+  margin-bottom: 40px;
+  margin-top: 70px;
 }
 
 @media (max-width: 900px) {
@@ -307,10 +307,9 @@ body {
 
 .stream-header {
   display: flex;
-  align-items: baseline;
+  align-items: center;
   justify-content: space-between;
-  gap: 16px;
-  margin-bottom: 18px;
+  margin-bottom: 65px;
 }
 
 .stream-title {
@@ -322,10 +321,9 @@ body {
 }
 
 .stream-sub {
-  margin: 4px 0 0;
-  font-size: 12px;
-  color: #6e7a67;
-  letter-spacing: 0.02em;
+  margin: 6px 0 0;
+  color: #6e7b67;
+  font-size: 14px;
 }
 
 .live-badge {
@@ -349,23 +347,27 @@ body {
 }
 
 .stream-grid {
-  display: grid;
+  display: flex;
+  flex-direction: column;
   gap: 56px;
   margin-top: 40px;
+  align-items: center;
 }
 
 .stream-card {
   position: relative;
+  width: 100%;
+  max-width: 590px;
 }
 
 .stream-tag {
   position: absolute;
-  left: 0;
+  left: -20px;
   top: -20px;
   background: #5a7657;
   color: #fff;
   font-family: "Bree Serif", serif;
-  font-size: 16px;
+  font-size: 20px;
   padding: 10px 18px;
   border-radius: 10px;
 }
@@ -374,7 +376,7 @@ body {
   background: #a7b48e;
   border-radius: 8px;
   padding: 14px;
-  box-shadow: 0 6px 0 #4d6a4b;
+  box-shadow: 8px 8px 0 #4d6a4b;
 }
 .stream-frame img {
   display: block;
