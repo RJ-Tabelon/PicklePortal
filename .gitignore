@@ -1,0 +1,62 @@
+# macOS
+.DS_Store
+
+# Python bytecode and caches
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.cache/
+.ipynb_checkpoints/
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+.conda/
+pip-wheel-metadata/
+
+# Project: model artifacts and large training outputs
+# Keep source code, ignore generated outputs and large binary weights
+model/runs/
+model/outputs/
+model/logs/
+model/checkpoints/
+model/weights/
+model/data/
+model/datasets/
+model/experiments/
+model/**/events.out.tfevents*
+model/**/*.onnx
+model/**/*.pt
+model/**/*.pth
+model/**/*.tflite
+model/**/*.engine
+model/**/*.trt
+
+# Environment files
+.env
+.env.*
+
+# Editors and IDEs
+.vscode/
+.idea/
+
+# Node (catch-all at root; client/server already have local .gitignore)
+node_modules/
+dist/
+build/
+
+# Misc
+*.tmp
+*.temp
+*.swp
+*.swo
+*.bak
