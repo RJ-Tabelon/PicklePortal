@@ -1,12 +1,13 @@
-import React from "react";
+// React import not required with new JSX transform
 
-type CourtStatus = "available" | "occupied_no_queue" | "occupied_with_queue";
+type CourtStatus = "available" | "occupied_no_queue" | "occupied_with_queue" | "occupied";
 
 export type CourtInfo = {
   name: string;
   players: number;
   queue: number;
   status: CourtStatus;
+  lightColor: string;
 };
 
 export default function OccupancyMonitor({

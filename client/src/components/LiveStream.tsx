@@ -1,6 +1,4 @@
-import React from "react";
-
-import court from "../assets/court.png";   
+// Live streams are embedded via iframe
 
 export default function LiveStream() {
   return (
@@ -20,14 +18,32 @@ export default function LiveStream() {
         <figure className="stream-card">
           <figcaption className="stream-tag">Court 1</figcaption>
           <div className="stream-frame">
-            <img src={court} alt="Court 1 live" />
+            {/* Streams the livestream of court 1 */}
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/LCwzqDMXbCk?autoplay=1&mute=1"
+              title="YouTube live stream"
+              frameBorder="0"
+              allow="autoplay; encrypted-media"
+              allowFullScreen
+            ></iframe>
           </div>
         </figure>
 
         <figure className="stream-card">
           <figcaption className="stream-tag">Court 2</figcaption>
           <div className="stream-frame">
-            <img src={court} alt="Court 2 live" />
+            {/* Streams the livestream of court 2 */}
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/-yaAA2wVHRA?autoplay=1&mute=1"
+              title="YouTube live stream"
+              frameBorder="0"
+              allow="autoplay; encrypted-media"
+              allowFullScreen
+            ></iframe>
           </div>
         </figure>
       </div>
