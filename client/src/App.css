@@ -169,7 +169,6 @@ body {
   position: relative;
   width: 340px;
   background: var(--panel);
-  border: 2px solid #8fa181;
   border-radius: 8px;
   text-align: center;
   padding: 18px 12px;
@@ -227,7 +226,6 @@ body {
   --shadow: #588157;
   position: relative;
   background: var(--panel);
-  border: 2px solid #8fa181;
   border-radius: 8px;
   padding: 26px 22px 22px;
   text-align: center;

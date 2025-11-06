@@ -92,11 +92,13 @@ export default function HomePage() {
       <section className='hero'>
         <div className='hero-title'>
           <img className='hero-logo' src={pickle} alt='pickleball paddles' />
-          <h1 className='site-title'>PicklePortal</h1>
+          <div>
+            <h1 className='site-title'>PicklePortal</h1>
+            <p className='hero-tagline'>
+              Plan your next pickleball match effortlessly.
+            </p>
+          </div>
         </div>
-        <p className='hero-tagline'>
-          Plan your next pickleball match effortlessly.
-        </p>
       </section>
       <div className='divider'></div>
       <OccupancyMonitor totalPlayers={totalPlayers} courts={courts} />
