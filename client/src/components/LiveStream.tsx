@@ -1,8 +1,4 @@
-import React, { useRef } from "react";
-
-import court from "../assets/court.png"; 
-
-let started = false;
+// Live streams are embedded via iframe
 
 export default function LiveStream() {
   return (

@@ -1,4 +1,4 @@
-import React from "react";
+// React import not required with new JSX transform
 
 type CourtStatus = "available" | "occupied_no_queue" | "occupied_with_queue" | "occupied";
 
