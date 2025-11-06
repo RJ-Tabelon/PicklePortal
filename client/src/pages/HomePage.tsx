@@ -3,7 +3,7 @@ import pickle from "../assets/pickle.png";
 import OccupancyMonitor from "../components/OccupancyMonitor";
 import type { CourtInfo } from "../components/OccupancyMonitor";
 import LiveStream from "../components/LiveStream";
-import { ref, onValue, update, db } from "../firebase_example";
+import { db } from "../firebase";
 
 let listenerAttached = false;
 
