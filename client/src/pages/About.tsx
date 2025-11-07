@@ -61,7 +61,7 @@ export default function About() {
       <section className='hero'>
         <div className='hero-title'>
           <div>
-            <h1 className='site-title'>Contact</h1>
+            <h1 id="contact" className='site-title'>Contact</h1>
             <p className='hero-tagline'>
               Feel Free to contact us with any questions or feedback.
             </p>
