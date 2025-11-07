@@ -1,0 +1,14 @@
+{
+    "name": "esp32-mjpeg-yolo-server",
+    "version": "0.1.0",
+    "type": "module",
+    "main": "index.js",
+    "scripts": {
+        "start": "node index.js",
+        "dev": "NODE_ENV=development node index.js"
+    },
+    "dependencies": {
+        "express": "^4.19.2",
+        "firebase": "10.13.1"
+    }
+}
