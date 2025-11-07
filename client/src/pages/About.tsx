@@ -1,6 +1,7 @@
 import { useState, useEffect, type FormEvent } from "react";
 import { useLocation } from "react-router-dom";
 import pickle from "../assets/pickle.png";
+import court from "../assets/court.png";
 
 export default function About() {
   const [message, setMessage] = useState("");
@@ -30,10 +31,10 @@ export default function About() {
       <section className="hero">
         <div className="hero-title">
           <img className="hero-logo" src={pickle} alt="pickleball paddles" />
-          <h1 className="site-title">about pickleportal</h1>
+          <h1 className="site-title">About PicklePortal</h1>
         </div>
         <p className="hero-tagline">
-          pickleportal helps you plan matches by showing live court status and a running player count.
+          PicklePortal helps you plan matches by showing live court status and a running player count.
         </p>
         <div className="divider" />
       </section>
@@ -43,15 +44,21 @@ export default function About() {
           <h2 className="section-title">About</h2>
           <div className="about-page-accent" aria-hidden="true" />
           <p className="section-text">
-            Sensors at each court detect play and send events to a small backend. the site listens for
+            Sensors at each court detect play and send events to a small backend. The site listens for
             updates and reflects availability instantly, using the same green theme and simple labels
-            you see on the physical lights. it is meant to be quick to read on phones and kiosks at the courts.
+            you see on the physical lights. It is meant to be quick to read on phones and kiosks at the courts.
           </p>
           <ul className="section-list">
             <li>- Available, occupied, or occupied with queue</li>
             <li>- Live total number of players</li>
             <li>- Fast, simple interface for real time checks</li>
           </ul>
+          
+          <div className="about-image-wrap">
+            <div className="about-image-frame">
+              <img src={court} alt="Pickleball court with sensors" className="about-image" />
+            </div>
+          </div>
         </div>
       </section>
 
