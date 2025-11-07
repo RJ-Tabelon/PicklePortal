@@ -395,3 +395,191 @@ body {
     box-shadow: 0 5px 0 #4d6a4b;
   }
 }
+
+.section {
+  max-width: 980px;
+  margin: 24px auto;
+  padding: 0 16px;
+  box-sizing: border-box;
+}
+
+.section-wrap {
+  padding: 8px 0 28px;
+}
+
+.section-title {
+  font-family: "Bree Serif", serif;
+  font-weight: 700;
+  font-size: 24px;
+  color: #222;
+  margin: 6px 0 12px;
+}
+
+.about-page-accent {
+  width: 64px;
+  height: 8px;
+  background: #a9b88e;
+  border-radius: 6px;
+  margin: 6px 0 18px;
+}
+
+.section-text {
+  color: #4d5b49;
+  font-size: 16px;
+  line-height: 1.6;
+  margin: 8px 0 0;
+}
+
+.section-list {
+  margin-top: 12px;
+  color: #4d5b49;
+  padding-left: 18px;
+}
+
+/* About page image */
+.about-image-wrap {
+  margin: 32px 0;
+  text-align: center;
+}
+
+.about-image-frame {
+  background: #a7b48e;
+  padding: 12px;
+  border-radius: 8px;
+  box-shadow: 0 6px 0 #4d6a4b;
+  display: inline-block;
+  max-width: 100%;
+}
+
+.about-image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+  border: 8px solid rgba(255, 255, 255, 0.3);
+}
+
+.image-caption {
+  margin: 12px 0 0;
+  font-size: 14px;
+  color: #5a7657;
+  font-style: italic;
+}
+
+.card-grid {
+  display: grid;
+  gap: 18px;
+}
+
+/* center contact cards and make the contact form wider */
+.card-grid.contact-grid {
+  justify-items: center;
+  grid-template-columns: 1fr;
+}
+
+/* make the contact info card larger and centered */
+.info-card.contact-form {
+  width: 760px;
+  max-width: 96%;
+  margin: 0 auto;
+  padding: 26px;
+}
+
+.info-card {
+  --panel: #a9b88e;
+  --shadow: #588157;
+  position: relative;
+  background: var(--panel);
+  border: 2px solid #8fa181;
+  border-radius: 8px;
+  padding: 18px;
+  box-sizing: border-box;
+}
+
+.info-card::before {
+  content: "";
+  position: absolute;
+  left: -8px;
+  right: 8px;
+  bottom: -8px;
+  top: 8px;
+  background: var(--shadow);
+  border-radius: 8px;
+  z-index: -1;
+}
+
+.card-title {
+  font-family: "Bree Serif", serif;
+  font-weight: 700;
+  color: #fff;
+  margin: 0 0 8px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #3da23d;
+  border: 2px solid #2e3b2e;
+  display: inline-block;
+}
+
+.contact-row {
+  display: flex;
+  gap: 18px;
+  align-items: center;
+  margin-bottom: 14px;
+}
+
+.contact-input {
+  flex: 1 1 auto;
+  padding: 14px 14px;
+  border-radius: 8px;
+  border: 1px solid #c9d1c1;
+  background: rgba(255, 255, 255, 0.7);
+  font-size: 15px;
+  box-sizing: border-box;
+}
+
+.contact-textarea {
+  width: 100%;
+  padding: 16px;
+  border-radius: 8px;
+  border: 1px solid #c9d1c1;
+  background: rgba(255, 255, 255, 0.7);
+  font-size: 15px;
+  box-sizing: border-box;
+  min-height: 320px; /* larger message box */
+  resize: vertical;
+  margin-bottom: 14px;
+}
+
+.contact-actions {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 18px;
+}
+
+.send-btn {
+  background: #5a7657;
+  color: #fff;
+  padding: 10px 18px;
+  border-radius: 8px;
+  border: none;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.contact-desc {
+  margin-bottom: 8px;
+  color: #4d5b49;
+}
+
+.sr-only {
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+  white-space: nowrap;
+}
