@@ -83,7 +83,7 @@ export default function HomePage() {
       ];
 
       setCourts(updatedCourts);
-      setTotalPlayers(c1.occupancyCount + c2.occupancyCount);
+      setTotalPlayers(c1.occupancyCount + c2.occupancyCount + c1.queueSize + c2.queueSize);
     });
   }
 
