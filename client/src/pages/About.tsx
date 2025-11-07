@@ -32,13 +32,9 @@ export default function About() {
         <div className='hero-title'>
           <div>
             <h1 className='site-title'>About</h1>
-            <p className='hero-tagline'>
-              PicklePortal helps you plan matches by showing live court status
-              and a running player count.
-            </p>
+
           </div>
         </div>
-        <div className='divider' />
       </section>
 
       <section className='section about-section'>
@@ -57,15 +53,7 @@ export default function About() {
           </ul>
         </div>
 
-        <div className='about-image-wrap'>
-          <div className='about-image-frame'>
-            <img
-              src={court}
-              alt='Pickleball court with sensors'
-              className='about-image'
-            />
-          </div>
-        </div>
+
       </section>
 
       <div className='divider' />
@@ -79,7 +67,6 @@ export default function About() {
             </p>
           </div>
         </div>
-        <div className='divider' />
       </section>
       <section>
           <br />
@@ -137,7 +124,6 @@ export default function About() {
           </div>
       </section>
 
-      <div className='divider' />
     </>
   );
 }

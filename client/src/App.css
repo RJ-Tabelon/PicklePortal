@@ -446,13 +446,18 @@ body {
   color: #4d5b49;
   font-size: 16px;
   line-height: 1.6;
-  margin: 8px 0 0;
+  max-width: 835px;         
+  margin: 0 auto 16px;      
 }
+
 
 .section-list {
   margin-top: 12px;
   color: #4d5b49;
   padding-left: 18px;
+  line-height: 1.6;
+  max-width: 835px;         
+  margin: 0 auto 16px;
 }
 
 /* About page image */
