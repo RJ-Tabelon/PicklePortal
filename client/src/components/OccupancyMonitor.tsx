@@ -18,12 +18,11 @@ export default function OccupancyMonitor({
   courts: CourtInfo[];
 }) {
   return (
-    <section id="occupancy" className="occ-section">
-
-      <div className="occ-head">
+    <section id="occupancy" className="stream-section">
+      <div className="stream-header">
         <div>
-          <h2 className="occ-title">Court Occupancy Monitor</h2>
-          <p className="occ-sub">Track Real-Time Court Availability with IoT Sensors</p>
+          <h2 className="stream-title">Court Occupancy Monitor</h2>
+          <p className="stream-sub">Track Real-Time Court Availability with IoT Sensors</p>
         </div>
 
         <div className="live-pill">

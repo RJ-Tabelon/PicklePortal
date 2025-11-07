@@ -119,24 +119,24 @@ body {
 }
 .occ-section {
   max-width: 1100px;
-  margin: 0 auto;
-  padding: 20px 16px 40px;
+  margin: 36px auto 80px;
+  padding: 0 20px;
 }
 
-.occ-head {
+.stream-header {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
   margin: 10px 0 18px;
 }
-.occ-title {
-  margin: 0;
+.stream-title {
   font-family: "Bree Serif", serif;
   font-weight: 700;
-  font-size: 24px;
-  color: #222;
+  font-size: 26px;
+  color: #1f2e1e;
+  margin: 0;
 }
-.occ-sub {
+.stream-sub {
   margin: 6px 0 0;
   color: #4d5b49;
   font-size: 16px;
@@ -149,19 +149,16 @@ body {
   border-radius: 10px;
   font-family: "Bree Serif", serif;
   font-size: 14px;
-  font-weight: 700;
   color: #1a1a1a;
   display: inline-flex;
   align-items: center;
   gap: 8px;
 }
-
-.live-dot, .live-badge .dot {
+.live-dot {
   width: 8px;
   height: 8px;
   border-radius: 50%;
   background: #3da23d;
-  border: 2px solid #2e3b2e;
   box-shadow: 0 0 0 2px #cfe6cf inset;
 }
 
@@ -226,8 +223,9 @@ body {
 .court-grid {
   margin-top: 40px;
   display: grid;
-  grid-template-columns: repeat(2, minmax(280px, 1fr));
-  gap: 34px;
+  grid-template-columns: repeat(2, minmax(160px, 320px));
+  gap: 40px;
+  justify-content: center;
 }
 .court-card {
   --panel: #a9b88e;
@@ -236,7 +234,7 @@ body {
   background: var(--panel);
   border: 2px solid #8fa181;
   border-radius: 8px;
-  padding: 26px 22px 22px;
+  padding: 16px 14px 14px;
   text-align: center;
 }
 .court-card::before {
@@ -252,14 +250,14 @@ body {
 }
 .court-badge {
   position: absolute;
-  left: 16px;
-  top: -14px;
+  left: 14px;
+  top: -12px;
   background: #3e6243;
   color: #fff;
-  padding: 8px 12px;
-  border-radius: 8px;
+  padding: 6px 10px;
+  border-radius: 6px;
   font-weight: 800;
-  font-size: 13px;
+  font-size: 12px;
 }
 .badge-dot {
   width: 8px;
@@ -271,19 +269,19 @@ body {
   vertical-align: middle;
 }
 .nums {
-  font: 700 50px/1 "Bree Serif", serif;
+  font: 700 36px/1 "Bree Serif", serif;
   color: #ffffff;
-  margin-top: 8px;
+  margin-top: 6px;
 }
 .nums.sm {
-  font-size: 44px;
+  font-size: 32px;
 }
 .label {
   color: #f3f5ee;
   text-transform: uppercase;
-  font-size: 12px;
+  font-size: 11px;
   letter-spacing: 0.08em;
-  margin-top: 6px;
+  margin-top: 4px;
 }
 
 .divider {
@@ -344,8 +342,7 @@ body {
 .stream-card {
   position: relative;
   width: 100%;
-  max-width: 960px;
-  margin: 0 auto;
+  max-width: 800px;
 }
 
 .stream-tag {

@@ -20,12 +20,12 @@ export default function LiveStream() {
           <div className="stream-frame">
             {/* Streams the livestream of court 1 */}
             <iframe
-              width="560"
-              height="315"
-              src="https://www.youtube.com/embed/LCwzqDMXbCk?autoplay=1&mute=1"
-              title="YouTube live stream"
-              frameBorder="0"
-              allow="autoplay; encrypted-media"
+              width='760'
+              height='428'
+              src='https://www.youtube.com/embed/LCwzqDMXbCk?autoplay=1&mute=1'
+              title='YouTube live stream'
+              frameBorder='0'
+              allow='autoplay; encrypted-media'
               allowFullScreen
             ></iframe>
           </div>
@@ -36,12 +36,12 @@ export default function LiveStream() {
           <div className="stream-frame">
             {/* Streams the livestream of court 2 */}
             <iframe
-              width="560"
-              height="315"
-              src="https://www.youtube.com/embed/-yaAA2wVHRA?autoplay=1&mute=1"
-              title="YouTube live stream"
-              frameBorder="0"
-              allow="autoplay; encrypted-media"
+              width='760'
+              height='428'
+              src='https://www.youtube.com/embed/-yaAA2wVHRA?autoplay=1&mute=1'
+              title='YouTube live stream'
+              frameBorder='0'
+              allow='autoplay; encrypted-media'
               allowFullScreen
             ></iframe>
           </div>
