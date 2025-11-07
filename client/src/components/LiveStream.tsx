@@ -2,15 +2,15 @@
 
 export default function LiveStream() {
   return (
-    <section id='stream' className='stream-section'>
-      <div className='stream-header'>
+    <section id="stream" className="stream-section">
+      <div className="stream-header">
         <div>
-          <h2 className='stream-title'>Live Court Feed</h2>
-          <p className='stream-sub'>Stream Each Court in Real Time</p>
+          <h2 className="stream-title">Live Court Feed</h2>
+          <p className="stream-sub">Stream Each Court in Real Time</p>
         </div>
 
-        <div className='live-pill'>
-          <span className='live-dot' />
+        <div className="live-pill">
+          <span className="live-dot" />
           Live
         </div>
       </div>
@@ -21,8 +21,8 @@ export default function LiveStream() {
           <div className='stream-frame'>
             {/* Streams the livestream of court 1 */}
             <iframe
-              width='560'
-              height='315'
+              width='800'
+              height='450'
               src='https://www.youtube.com/embed/LCwzqDMXbCk?autoplay=1&mute=1'
               title='YouTube live stream'
               frameBorder='0'
@@ -37,8 +37,8 @@ export default function LiveStream() {
           <div className='stream-frame'>
             {/* Streams the livestream of court 2 */}
             <iframe
-              width='560'
-              height='315'
+              width='800'
+              height='450'
               src='https://www.youtube.com/embed/-yaAA2wVHRA?autoplay=1&mute=1'
               title='YouTube live stream'
               frameBorder='0'

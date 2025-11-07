@@ -32,19 +32,13 @@ export default function About() {
         <div className='hero-title'>
           <div>
             <h1 className='site-title'>About</h1>
-            <p className='hero-tagline'>
-              PicklePortal helps you plan matches by showing live court status
-              and a running player count.
-            </p>
+
           </div>
         </div>
-        <div className='divider' />
       </section>
 
       <section className='section about-section'>
         <div className='section-wrap'>
-          <h2 className='section-title'>About</h2>
-          <div className='about-page-accent' aria-hidden='true' />
           <p className='section-text'>
             Sensors at each court detect play and send events to a small
             backend. the site listens for updates and reflects availability
@@ -59,26 +53,22 @@ export default function About() {
           </ul>
         </div>
 
-        <div className='about-image-wrap'>
-          <div className='about-image-frame'>
-            <img
-              src={court}
-              alt='Pickleball court with sensors'
-              className='about-image'
-            />
-          </div>
-        </div>
+
       </section>
 
       <div className='divider' />
 
-      <section id='contact' className='section'>
-        <div className='section-wrap'>
-          <h2 className='section-title'>Contact Us</h2>
-
-          <p className='section-text contact-desc'>
-            Feel free to contact us if you have any questions or something.
-          </p>
+      <section className='hero'>
+        <div className='hero-title'>
+          <div>
+            <h1 className='site-title'>Contact</h1>
+            <p className='hero-tagline'>
+              Feel Free to contact us with any questions or feedback.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section>
           <br />
           <div className='card-grid contact-grid'>
             <form className='info-card contact-form' onSubmit={handleSubmit}>
@@ -132,10 +122,8 @@ export default function About() {
               </div>
             </form>
           </div>
-        </div>
       </section>
 
-      <div className='divider' />
     </>
   );
 }

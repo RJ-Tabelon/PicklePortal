@@ -117,45 +117,57 @@ body {
 }
 .occ-section {
   max-width: 1100px;
-  margin: 0 auto;
-  padding: 20px 16px 40px;
+  margin: 36px auto 80px;
+  padding: 0 20px;
 }
 
-.occ-head {
+.stream-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-bottom: 65px;
 }
-.occ-title {
+.stream-title {
+  font-family: "Bree Serif", serif;
+  font-weight: 700;
+  font-size: 26px;
+  color: #1f2e1e;
   margin: 0;
   font-family: "Bree Serif", serif;
   font-weight: 700;
   font-size: 26px;
   color: #1f2e1e;
 }
-.occ-sub {
+.stream-sub {
   margin: 6px 0 0;
-  color: #6e7b67;
-  font-size: 14px;
+  color: #4d5b49;
+  font-size: 16px;
 }
 
-.live-pill {
+.live-pill, .live-badge {
   background: #fff;
-  border: 2px solid #333;
-  padding: 4px 12px;
+  border: 2px solid #1a1a1a;
+  padding: 6px 12px;
+  border: 2px solid #1a1a1a;
+  padding: 6px 12px;
   border-radius: 10px;
-  font-weight: 700;
+  font-family: "Bree Serif", serif;
+  font-size: 14px;
+  color: #1a1a1a;
   display: inline-flex;
   align-items: center;
   gap: 8px;
+  font-family: "Bree Serif", serif;
+  font-size: 14px;
+  color: #1a1a1a;
+  gap: 8px;
 }
 .live-dot {
-  width: 10px;
-  height: 10px;
+  width: 8px;
+  height: 8px;
   border-radius: 50%;
-  background: #6aaa57;
-  border: 1px solid #2e3b2e;
+  background: #3da23d;
+  box-shadow: 0 0 0 2px #cfe6cf inset;
 }
 
 .metric-wrap {
@@ -218,8 +230,9 @@ body {
 .court-grid {
   margin-top: 40px;
   display: grid;
-  grid-template-columns: repeat(2, minmax(280px, 1fr));
-  gap: 34px;
+  grid-template-columns: repeat(2, 280px);
+  gap: 60px;
+  justify-content: center;
 }
 .court-card {
   --panel: #a9b88e;
@@ -227,8 +240,9 @@ body {
   position: relative;
   background: var(--panel);
   border-radius: 8px;
-  padding: 26px 22px 22px;
+  padding: 22px 18px 18px;
   text-align: center;
+  width: 280px;
 }
 .court-card::before {
   content: "";
@@ -243,14 +257,14 @@ body {
 }
 .court-badge {
   position: absolute;
-  left: 16px;
-  top: -14px;
+  left: 14px;
+  top: -12px;
   background: #3e6243;
   color: #fff;
-  padding: 8px 12px;
-  border-radius: 8px;
+  padding: 6px 10px;
+  border-radius: 6px;
   font-weight: 800;
-  font-size: 13px;
+  font-size: 12px;
 }
 .badge-dot {
   width: 8px;
@@ -262,19 +276,19 @@ body {
   vertical-align: middle;
 }
 .nums {
-  font: 700 50px/1 "Bree Serif", serif;
+  font: 700 36px/1 "Bree Serif", serif;
   color: #ffffff;
-  margin-top: 8px;
+  margin-top: 6px;
 }
 .nums.sm {
-  font-size: 44px;
+  font-size: 32px;
 }
 .label {
   color: #f3f5ee;
   text-transform: uppercase;
-  font-size: 12px;
+  font-size: 11px;
   letter-spacing: 0.08em;
-  margin-top: 6px;
+  margin-top: 4px;
 }
 
 .divider {
@@ -298,9 +312,9 @@ body {
 
 /* ========== LIVE STREAM ========== */
 .stream-section {
-  max-width: 1100px;
-  margin: 36px auto 80px;
-  padding: 0 20px;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 20px 16px 40px;
 }
 
 .stream-header {
@@ -311,11 +325,11 @@ body {
 }
 
 .stream-title {
+  margin: 0;
   font-family: "Bree Serif", serif;
   font-weight: 700;
   font-size: 26px;
   color: #1f2e1e;
-  margin: 0;
 }
 
 .stream-sub {
@@ -336,12 +350,13 @@ body {
   padding: 6px 12px;
   background: #fff;
 }
-.live-badge .dot {
+.live-dot {
   width: 8px;
   height: 8px;
   border-radius: 50%;
   background: #3da23d;
   box-shadow: 0 0 0 2px #cfe6cf inset;
+  display: inline-block;
 }
 
 .stream-grid {
@@ -355,7 +370,7 @@ body {
 .stream-card {
   position: relative;
   width: 100%;
-  max-width: 590px;
+  max-width: 850px;
 }
 
 .stream-tag {
@@ -368,6 +383,7 @@ body {
   font-size: 20px;
   padding: 10px 18px;
   border-radius: 10px;
+  z-index: 1;
 }
 
 .stream-frame {
@@ -375,13 +391,16 @@ body {
   border-radius: 8px;
   padding: 14px;
   box-shadow: 8px 8px 0 #4d6a4b;
+  display: flex;
+  justify-content: center;
 }
 .stream-frame img {
   display: block;
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: cover;
   border-radius: 4px;
-  border: 10px solid rgba(255, 255, 255, 0.3);
+  border: none;
 }
 
 @media (max-width: 700px) {
@@ -427,13 +446,18 @@ body {
   color: #4d5b49;
   font-size: 16px;
   line-height: 1.6;
-  margin: 8px 0 0;
+  max-width: 835px;         
+  margin: 0 auto 16px;      
 }
+
 
 .section-list {
   margin-top: 12px;
   color: #4d5b49;
   padding-left: 18px;
+  line-height: 1.6;
+  max-width: 835px;         
+  margin: 0 auto 16px;
 }
 
 /* About page image */
