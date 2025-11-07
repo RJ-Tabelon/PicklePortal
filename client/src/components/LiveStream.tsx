@@ -2,11 +2,11 @@
 
 export default function LiveStream() {
   return (
-    <section id="stream" className="occ-section">
-      <div className="occ-head">
+    <section id="stream" className="stream-section">
+      <div className="stream-header">
         <div>
-          <h2 className="occ-title">Live Court Feed</h2>
-          <p className="occ-sub">Stream Each Court in Real Time</p>
+          <h2 className="stream-title">Live Court Feed</h2>
+          <p className="stream-sub">Stream Each Court in Real Time</p>
         </div>
 
         <div className="live-pill">
