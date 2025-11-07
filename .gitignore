@@ -15,6 +15,9 @@ htmlcov/
 .cache/
 .ipynb_checkpoints/
 
+# Backend
+server/firebase.js
+
 # Virtual environments
 .venv/
 venv/
