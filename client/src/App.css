@@ -142,12 +142,16 @@ body {
 
 .live-pill {
   background: #fff;
-  border: 2px solid #333;
-  padding: 4px 12px;
+  border: 2px solid #1a1a1a;
+  padding: 6px 12px;
   border-radius: 10px;
   font-weight: 700;
   display: inline-flex;
   align-items: center;
+  gap: 8px;
+  font-family: "Bree Serif", serif;
+  font-size: 14px;
+  color: #1a1a1a;
   gap: 8px;
 }
 .live-dot {
@@ -218,8 +222,9 @@ body {
 .court-grid {
   margin-top: 40px;
   display: grid;
-  grid-template-columns: repeat(2, minmax(280px, 1fr));
-  gap: 34px;
+  grid-template-columns: repeat(2, 280px);
+  gap: 60px;
+  justify-content: center;
 }
 .court-card {
   --panel: #a9b88e;
@@ -227,8 +232,9 @@ body {
   position: relative;
   background: var(--panel);
   border-radius: 8px;
-  padding: 26px 22px 22px;
+  padding: 22px 18px 18px;
   text-align: center;
+  width: 280px;
 }
 .court-card::before {
   content: "";
@@ -297,32 +303,6 @@ body {
 }
 
 /* ========== LIVE STREAM ========== */
-.stream-section {
-  max-width: 1100px;
-  margin: 36px auto 80px;
-  padding: 0 20px;
-}
-
-.stream-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 65px;
-}
-
-.stream-title {
-  font-family: "Bree Serif", serif;
-  font-weight: 700;
-  font-size: 26px;
-  color: #1f2e1e;
-  margin: 0;
-}
-
-.stream-sub {
-  margin: 6px 0 0;
-  color: #6e7b67;
-  font-size: 14px;
-}
 
 .live-badge {
   display: inline-flex;
@@ -336,12 +316,13 @@ body {
   padding: 6px 12px;
   background: #fff;
 }
-.live-badge .dot {
+.live-dot {
   width: 8px;
   height: 8px;
   border-radius: 50%;
   background: #3da23d;
   box-shadow: 0 0 0 2px #cfe6cf inset;
+  display: inline-block;
 }
 
 .stream-grid {
@@ -355,7 +336,7 @@ body {
 .stream-card {
   position: relative;
   width: 100%;
-  max-width: 590px;
+  max-width: 850px;
 }
 
 .stream-tag {
@@ -375,6 +356,8 @@ body {
   border-radius: 8px;
   padding: 14px;
   box-shadow: 8px 8px 0 #4d6a4b;
+  display: flex;
+  justify-content: center;
 }
 .stream-frame img {
   display: block;
