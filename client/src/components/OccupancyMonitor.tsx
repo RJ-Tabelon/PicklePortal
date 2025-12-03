@@ -38,11 +38,20 @@ export default function OccupancyMonitor({
         </div>
       </div>
 
-      <div className="legend">
+      <div className="legend legend-top">
         <Legend color="#27c93f" label="Court is Available" />
         <Legend color="#f6c350" label="Court Occupied Without Active Queue" />
         <Legend color="#e44d4d" label="Court Occupied With Active Queue" />
       </div>
+
+
+
+<div className="legend legend-bottom">
+  <Legend color="#27c93f" label="Court is Available" />
+  <Legend color="#f6c350" label="Court Occupied Without Active Queue" />
+  <Legend color="#e44d4d" label="Court Occupied With Active Queue" />
+</div>
+
 
       <div className="court-grid">
         {courts.map((c) => (

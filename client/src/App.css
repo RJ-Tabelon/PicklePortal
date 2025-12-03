@@ -1,3 +1,4 @@
+
 /* NAVBAR */
 .nav-slab {
   background: #a7b48e;
@@ -244,6 +245,12 @@ body {
   text-align: center;
   width: 280px;
 }
+.court-card {
+  width: 100%;
+  max-width: 330px;
+  margin: 0 auto;
+}
+
 .court-card::before {
   content: "";
   position: absolute;
@@ -460,7 +467,6 @@ body {
   margin: 0 auto 16px;
 }
 
-/* About page image */
 .about-image-wrap {
   margin: 32px 0;
   text-align: center;
@@ -495,13 +501,11 @@ body {
   gap: 18px;
 }
 
-/* center contact cards and make the contact form wider */
 .card-grid.contact-grid {
   justify-items: center;
   grid-template-columns: 1fr;
 }
 
-/* make the contact info card larger and centered */
 .info-card.contact-form {
   width: 760px;
   max-width: 96%;
@@ -573,7 +577,7 @@ body {
   background: rgba(255, 255, 255, 0.7);
   font-size: 15px;
   box-sizing: border-box;
-  min-height: 320px; /* larger message box */
+  min-height: 320px; 
   resize: vertical;
   margin-bottom: 14px;
 }
@@ -606,4 +610,178 @@ body {
   overflow: hidden;
   clip: rect(1px, 1px, 1px, 1px);
   white-space: nowrap;
+}
+
+/* ---------------- MOBILE NAVBAR FIX ---------------- */
+@media (max-width: 750px) {
+
+  .nav-slab {
+    height: auto;
+    padding: 6px 0;
+  }
+
+  .nav-pill {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    gap: 12px;               
+    padding: 14px 18px;      
+    height: auto;             
+    border-radius: 12px;
+  }
+
+  .nav-pill::after {
+    display: none; 
+  }
+
+  .nav-pill a {
+    font-size: 13px;
+    letter-spacing: 0.05em;
+  }
+
+  .ball-btn {
+    width: 34px;
+    height: 34px;
+  }
+
+  .ball-btn img {
+    width: 28px;
+    height: 28px;
+  }
+}
+/* ---------------- MOBILE HERO FIX ---------------- */
+@media (max-width: 750px) {
+
+  .hero {
+    margin-top: 40px;
+    padding: 0 12px;
+  }
+
+  .hero-title {
+    flex-direction: column;  
+    gap: 6px;
+    text-align: center;
+  }
+
+  .hero-logo {
+    width: 130px;    
+    height: auto;
+  }
+
+  .site-title {
+    font-size: 40px; 
+    text-shadow: -3px 3px 0 #2f5130;
+  }
+
+  .hero-tagline {
+    font-size: 16px;
+    margin-top: -2px;
+  }
+}
+
+@media (max-width: 750px) {
+  .stream-header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 12px;
+  }
+
+  .live-pill {
+    align-self: center;
+  }
+}
+@media (max-width: 750px) {
+  .metric-wrap {
+    margin: 10px 0 30px;
+  }
+
+  .metric-card {
+    width: 100%;
+    max-width: 330px;
+    padding: 16px;
+  }
+
+  .metric-value {
+    font-size: 46px;
+  }
+}
+
+@media (max-width: 750px) {
+  .court-badge {
+    left: 50%;
+    transform: translateX(-50%);
+    top: -14px;
+  }
+
+  .court-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+}
+
+.legend-bottom {
+  display: none;
+}
+
+@media (max-width: 750px) {
+  .legend-top {
+    display: flex;
+    justify-content: center;
+    gap: 22px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+  }
+
+  .legend-bottom {
+        display: none;
+  }
+}
+
+@media (max-width: 750px) {
+
+  .section-title,
+  .contact-desc {
+    text-align: center;
+  }
+
+  .contact-grid,
+  .info-card.contact-form {
+    width: 100%;
+    max-width: 360px;
+    margin: 0 auto;
+  }
+
+  .info-card.contact-form {
+    padding: 18px;
+  }
+
+  .contact-input,
+  .contact-textarea  {
+    width: 100%;
+    font-size: 15px;
+    padding: 12px 14px;
+  }
+
+  .contact-textarea {
+    min-height: 180px;
+  }
+
+  .contact-row {
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+
+  .contact-actions {
+    justify-content: center;
+  }
+
+  .send-btn {
+    padding: 10px 16px;
+    font-size: 15px;
+  }
 }
