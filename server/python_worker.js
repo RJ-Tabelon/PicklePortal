@@ -70,5 +70,9 @@ export async function spawnWorker(opts = {}) {
 // Helper for image inference:
 export function sendFrameToWorker(child, jpegBuffer) {
     const base64 = jpegBuffer.toString("base64");
-    return child._send("frame", { image_b64: base64 }).then((resp) => resp.count);
+    return child._send("frame", { image_b64: base64 })
+        .then((resp) => ({
+            count: resp.count,
+            annotated_b64: resp.annotated_b64 || null
+        }));
 }

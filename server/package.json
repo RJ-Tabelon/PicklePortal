@@ -8,6 +8,7 @@
         "dev": "NODE_ENV=development node index.js"
     },
     "dependencies": {
+        "cors": "^2.8.5",
         "express": "^4.19.2",
         "firebase": "10.13.1"
     }

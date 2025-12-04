@@ -17,7 +17,7 @@
 #define PATH_SNAPSHOT "/snapshot/court1"  // Endpoint that accepts a single JPEG
 
 // How often to send a snapshot
-#define SNAPSHOT_MS   5000
+#define SNAPSHOT_MS   1000
 
 // Initialize camera
 static void init_camera() {
@@ -66,7 +66,10 @@ static void init_camera() {
 
   // Set size and quality, keep it small for demo
   sensor_t *s = esp_camera_sensor_get();
-  s->set_framesize(s, FRAMESIZE_QVGA);
+  s->set_vflip(s, 1);
+  s->set_hmirror(s, 0);
+  //s->set_framesize(s, FRAMESIZE_QVGA);
+  s->set_framesize(s, FRAMESIZE_VGA);
   s->set_quality(s, 12);
 }
 
