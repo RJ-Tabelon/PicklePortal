@@ -21,7 +21,7 @@ export default function LiveStream() {
           <div className='stream-frame'>
             {/* Streams the livestream of court 1 */}
             <img
-              src="http://172.20.10.12:81/stream1"
+              src="http://172.20.10.12:81/stream"
               alt="Court 1 Stream"
               style={{
                 width: "100%",
