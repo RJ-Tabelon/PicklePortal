@@ -70,7 +70,7 @@ export default function About() {
       </section>
       <section>
           <br />
-          <div className='card-grid contact-grid'>
+          <div className='card-grid contact-grid pb-[30px]'>
             <form className='info-card contact-form' onSubmit={handleSubmit}>
               <div className='dot' aria-hidden='true' />
               <h3 className='card-title'>Contact Form</h3>
