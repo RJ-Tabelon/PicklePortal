@@ -1,4 +1,5 @@
 // Import Firebase SDK modules
+// RENAME THIS FILE firebase.ts
 import { initializeApp } from "firebase/app";
 import { getDatabase } from "firebase/database";
 
