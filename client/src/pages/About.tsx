@@ -1,27 +1,27 @@
-import { useState, useEffect, type FormEvent } from "react";
-import { useLocation } from "react-router-dom";
-import pickle from "../assets/pickle.png";
+import { useState, useEffect, type FormEvent } from 'react';
+import { useLocation } from 'react-router-dom';
+import pickle from '../assets/pickle.png';
 import court from '../assets/court.png';
 
 export default function About() {
-  const [message, setMessage] = useState("");
-  const [senderName, setSenderName] = useState("");
-  const [senderEmail, setSenderEmail] = useState("");
+  const [message, setMessage] = useState('');
+  const [senderName, setSenderName] = useState('');
+  const [senderEmail, setSenderEmail] = useState('');
   const location = useLocation();
 
   const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    const subject = encodeURIComponent("Contact from PicklePortal");
+    const subject = encodeURIComponent('Contact from PicklePortal');
     const bodyText = `Name: ${senderName}\nEmail: ${senderEmail}\n\n${message}`;
-    const body = encodeURIComponent(bodyText || "");
+    const body = encodeURIComponent(bodyText || '');
     window.location.href = `mailto:dolphinsquare03@gmail.com?subject=${subject}&body=${body}`;
   };
 
   useEffect(() => {
-    if (location.hash === "#contact") {
+    if (location.hash === '#contact') {
       setTimeout(() => {
-        const el = document.getElementById("contact");
-        if (el) el.scrollIntoView({ behavior: "smooth", block: "start" });
+        const el = document.getElementById('contact');
+        if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
       }, 80);
     }
   }, [location]);
@@ -32,7 +32,6 @@ export default function About() {
         <div className='hero-title'>
           <div>
             <h1 className='site-title'>About</h1>
-
           </div>
         </div>
       </section>
@@ -47,13 +46,11 @@ export default function About() {
             kiosks at the courts.
           </p>
           <ul className='section-list'>
-            <li>- Available, occupied, or occupied with queue</li>
-            <li>- Live total number of players</li>
-            <li>- Fast, simple interface for real time checks</li>
+            <li>&bull; Available, occupied, or occupied with queue</li>
+            <li>&bull; Live total number of players</li>
+            <li>&bull; Fast, simple interface for real time checks</li>
           </ul>
         </div>
-
-
       </section>
 
       <div className='divider' />
@@ -61,7 +58,9 @@ export default function About() {
       <section className='hero'>
         <div className='hero-title'>
           <div>
-            <h1 id="contact" className='site-title'>Contact</h1>
+            <h1 id='contact' className='site-title'>
+              Contact
+            </h1>
             <p className='hero-tagline'>
               Feel Free to contact us with any questions or feedback.
             </p>
@@ -69,61 +68,60 @@ export default function About() {
         </div>
       </section>
       <section>
-          <br />
-          <div className='card-grid contact-grid pb-[30px]'>
-            <form className='info-card contact-form' onSubmit={handleSubmit}>
-              <div className='dot' aria-hidden='true' />
-              <h3 className='card-title'>Contact Form</h3>
+        <br />
+        <div className='card-grid contact-grid pb-[80px]'>
+          <form className='info-card contact-form' onSubmit={handleSubmit}>
+            <div className='dot' aria-hidden='true' />
+            <h3 className='card-title'>Contact Form</h3>
 
-              <div className='contact-row'>
-                <label htmlFor='contact-name' className='sr-only'>
-                  Your name
-                </label>
-                <input
-                  id='contact-name'
-                  className='contact-input'
-                  placeholder='Your name'
-                  value={senderName}
-                  onChange={e => setSenderName(e.target.value)}
-                  required
-                />
-
-                <label htmlFor='contact-email' className='sr-only'>
-                  Your email
-                </label>
-                <input
-                  id='contact-email'
-                  type='email'
-                  className='contact-input'
-                  placeholder='Your email'
-                  value={senderEmail}
-                  onChange={e => setSenderEmail(e.target.value)}
-                  required
-                />
-              </div>
-
-              <label htmlFor='contact-message' className='sr-only'>
-                Message
+            <div className='contact-row'>
+              <label htmlFor='contact-name' className='sr-only'>
+                Your name
               </label>
-              <textarea
-                id='contact-message'
-                className='card-text contact-textarea'
-                placeholder='Write your message here...'
-                value={message}
-                onChange={e => setMessage(e.target.value)}
-                rows={8}
+              <input
+                id='contact-name'
+                className='contact-input'
+                placeholder='Your name'
+                value={senderName}
+                onChange={e => setSenderName(e.target.value)}
                 required
               />
 
-              <div className='contact-actions'>
-                <button type='submit' className='send-btn'>
-                  Send
-                </button>
-              </div>
-            </form>
-          </div>
-      </section>
+              <label htmlFor='contact-email' className='sr-only'>
+                Your email
+              </label>
+              <input
+                id='contact-email'
+                type='email'
+                className='contact-input'
+                placeholder='Your email'
+                value={senderEmail}
+                onChange={e => setSenderEmail(e.target.value)}
+                required
+              />
+            </div>
 
+            <label htmlFor='contact-message' className='sr-only'>
+              Message
+            </label>
+            <textarea
+              id='contact-message'
+              className='card-text contact-textarea'
+              placeholder='Write your message here...'
+              value={message}
+              onChange={e => setMessage(e.target.value)}
+              rows={8}
+              required
+            />
+
+            <div className='contact-actions'>
+              <button type='submit' className='send-btn'>
+                Send
+              </button>
+            </div>
+          </form>
+        </div>
+      </section>
     </>
   );
 }

@@ -32,7 +32,7 @@ export default function LiveStream() {
           </div>
         </figure>
 
-        <figure className='stream-card'>
+        <figure className='stream-card mb-[60px]'>
           <figcaption className='stream-tag'>Court 2</figcaption>
           <div className='stream-frame'>
             {/* Streams the livestream of court 2 */}
