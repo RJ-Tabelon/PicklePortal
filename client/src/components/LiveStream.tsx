@@ -20,15 +20,24 @@ export default function LiveStream() {
           <figcaption className='stream-tag'>Court 1</figcaption>
           <div className='stream-frame'>
             {/* Streams the livestream of court 1 */}
-            <iframe
-              width='800'
-              height='450'
-              src='https://www.youtube.com/embed/LCwzqDMXbCk?autoplay=1&mute=1'
-              title='YouTube live stream'
-              frameBorder='0'
-              allow='autoplay; encrypted-media'
-              allowFullScreen
-            ></iframe>
+            <img
+              src="http://172.20.10.12:81/stream"
+              alt="Court 1 Stream"
+              style={{
+                width: "100%",
+                height: "auto",
+                display: "block",
+                objectFit: "contain",
+                background: "#2f3b2f", // matches your green theme
+                border: "2px solid #000",
+              }}
+              onError={(e) => {
+                e.target.style.display = "none"; // hide broken stream
+              }}
+              onLoad={(e) => {
+                e.target.style.display = "block";
+              }}
+            />
           </div>
         </figure>
 
