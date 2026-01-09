@@ -5,6 +5,7 @@ PicklePortal is a small IoT + web dashboard project for monitoring pickleball co
 It’s built for recreational facilities (or a single set of courts) that want a simple “is the court free / is there a queue?” view plus a live camera feed.
 
 ![HomePage.png](HomePage.png)
+![ComputerVision.png](ComputerVision.png)
 
 ---
 
